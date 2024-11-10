@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    color: #d9534f; /* Red color */
+    text-align: center;
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: #d9534f;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: color 0.3s;
+
+}
+
+.form-container {
+    max-width: 450px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.result-card {
+    max-width: 500px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: #d9534f;
+    color:#fff;
+    border: none;
+}
+
+.btn-outline-primary {
+    color: #d9534f;
+    border-color: #d9534f;
+}
+
+.btn-outline-primary:hover {
+    background-color: #d9534f;
+    color: white;
+}
+
+/* Light and Dark Mode Styles */
+.light-mode {
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+.dark-mode {
+    color: #f7f7f7;
+    background-color: #333;
+}
+
+.dark-mode .form-container, .dark-mode .result-card {
+    background-color: #444;
+    border-color: #555;
+}
+
+.dark-mode h1, .dark-mode .btn-primary, .dark-mode .btn-outline-primary {
+    color: #ff6b6b;
+}
+
+.dark-mode .btn-outline-primary:hover {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+.custom-hover:hover, .custom-hover:focus, .custom-hover:active {
+    color:white ! important;
+    background-color: #ff6b6b ! important;
+    border:none ! important;
+}
+
+
+.form-control:focus{
+    box-shadow:0 0 0 .1rem #ff6b6b ! important;
+    outline: none ! important;
+    border:none !important;
+}
